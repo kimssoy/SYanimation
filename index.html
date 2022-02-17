@@ -5,6 +5,7 @@
 <title>Rainy Day</title>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
     div{
         width:500px;
@@ -24,24 +25,39 @@
       text-align:center;
       font-size:50px;
       font-family:'Tangerine';
-      padding:80px 0 40px 0;
+      padding:40px 0 20px 0;
     }
-    p{
+    h3{
       width:500px;
       margin:auto;
       text-align:right;
-      font-size:32px;
+      font-size:30px;
       font-family:'Tangerine';
       padding:20px 0;
     }
-    p>span{padding-right:20px;}
+    h3>span{padding-right:20px;}
+    p{
+        text-align:center;
+        padding-bottom:40px;
+        font-family:'Gowun Dodum';
+        font-weight:bold;
+        font-size:16px;
+    }
+    p>span{font-size:18px;}
 </style>
 </head>
 
 <body>
     <h2>Rainy Day</h2>
     <div></div>
-    <p>MouseOver <span>&uHar;</span></p>
+    <h3>MouseOver <span>&uHar;</span></h3>
+    <p>
+        <span>JavaScript를 사용한 연속애니메이션</span><br><br>
+        이미지에 마우스를 올려놨을때 애니메이션이 재생되고<br>
+        마우스가 떠났을때 역재생됩니다.<br><br>
+        모바일의 경우 이미지를 클릭했을때 애니메이션이 재생되고<br>
+        이미지 바깥쪽을 클릭했을때 역재생됩니다.
+    </p>
     <script>
         const parent = document.querySelector("div");
 
